@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_basic_flutter/pages/widget dasar/widget_dasar.dart';
+import 'package:learn_basic_flutter/pages/layout dasar/layout_dasar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,9 +21,8 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => const WidgetDasar(),
-                    ));
+                    MaterialPageRoute(builder: (context) => const WidgetDasar(),)
+                );
               },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurpleAccent,
@@ -31,7 +31,10 @@ class HomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(builder: (context) => const LayoutsDasar())
+                );
               },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurpleAccent,
